@@ -1,5 +1,6 @@
 import { Box, Typography, useTheme, Button, IconButton } from "@mui/material";
-import Link from '@mui/material/Link';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import PersonIcon from '@mui/icons-material/Person';
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -159,18 +160,10 @@ function Signin() {
                     marginTop: "23%"
                 }}>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "15px", color: "black" }}>Or Signup Using</Typography>
-                <Link> <Typography sx={{ fontFamily: "Montserrat", fontSize: "15px", color: "black" }}>Signup </Typography></Link>
+                <Link to = {"/signup"}> <Typography sx={{ fontFamily: "Montserrat", fontSize: "15px", color: "black" }} >Signup </Typography></Link>
                 </Box>
-
-
             </Box>
-
-
-
-
         </Box>
-
-
     )
 }
 export default Signin;

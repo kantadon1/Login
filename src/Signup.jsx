@@ -1,5 +1,5 @@
 import { Box, Typography, useTheme, Button, IconButton } from "@mui/material";
-import Link from '@mui/material/Link';
+import { Link } from 'react-router-dom';
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import GoogleIcon from '@mui/icons-material/Google';
@@ -224,7 +224,7 @@ function Signup() {
                         {passwordError && <span style={{ color: "red" }}>{passwordError}</span>}
                     </Box>
 
-
+                    <Link to={"/"}>
                     <Button type= "submit" className="Login" disabled = {!!passwordError} sx={{
                         width: "325px",
                         height: "40px",
@@ -234,9 +234,8 @@ function Signup() {
                     }} >
 
                         <Typography sx={{ fontFamily: "Poetsen One", fontSize: "20px", color: "white" }}>Create Account</Typography>
-
                     </Button>
-
+                    </Link>
 
 
 
